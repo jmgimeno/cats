@@ -36,7 +36,7 @@ private[cats] trait ScalaVersionSpecificMonoidKInstances {
 }
 
 private[cats] trait ScalaVersionSpecificParallelInstances {
-  @deprecated("Use catsParallelForLazyList", "3.0.0")
+  @deprecated("Use catsStdParallelForZipLazyList", "3.0.0")
   implicit def catsStdParallelForZipStream: Parallel.Aux[Stream, ZipStream] =
     cats.instances.parallel.catsStdParallelForZipStream
 
